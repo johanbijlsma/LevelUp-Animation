@@ -7,11 +7,11 @@
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 		/>
 
-		<title>reveal.js</title>
+		<title>LevelUp Sessie -  Animaties en Transities in CSS en JavaScript</title>
 
 		<link rel="stylesheet" href="dist/reset.css" />
 		<link rel="stylesheet" href="dist/reveal.css" />
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+		<link rel="stylesheet" href="dist/theme/custom.css" id="theme" />
 
 		<!-- Theme used for syntax highlighted code -->
 		<link
@@ -34,25 +34,328 @@
 					<text-area data-template>
                         # Definities
                         ## Transitie
-                        > Transitions enable you to define the transition between two states of an element. Different states may be defined using pseudo-classes like `:hover` or `:active` or dynamically set using JavaScript. (bron: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) )
-                    </text-area>
+                        > Transitions enable you to define the
+						transition between two states of an element. Different states may be
+						defined using pseudo-classes like `:hover` or `:active` or
+						dynamically set using JavaScript. (bron:
+						[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) )
+					</text-area>
 				</section>
 				<section data-markdown>
 					<text-area data-template>
                         # Definities
                         ## Animaties
-                        > The animation shorthand property is a comma-separated list of animation definitions. Each item in the list gives one item of the value for all of the subproperties of the shorthand, which are known as the animation properties. (bron: [W3C](https://drafts.csswg.org/css-animations/#animation) )
-                    </text-area>
+                        > The animation shorthand property is a
+						comma-separated list of animation definitions. Each item in the list
+						gives one item of the value for all of the subproperties of the
+						shorthand, which are known as the animation properties. (bron:
+						[W3C](https://drafts.csswg.org/css-animations/#animation) )
+					</text-area>
+                </section>
+                <!-- CSS pros & cons -->
+
+				<section data-auto-animate data-transition="slide" data-background="rgb(62	88	227	)" data-background-transition="zoom">
+                        <h1>CSS Pros & Cons</h1>
 				</section>
-				<section>Slide 3</section>
-				<section>Slide 4</section>
-				<section>Slide 5</section>
-				<section>Slide 6</section>
-				<section>Slide 7</section>
-				<section>Slide 8</section>
-				<section>Slide 9</section>
-				<section>Slide 10</section>
-				<section>Slide 11</section>
+				<section data-auto-animate data-transition="slide" data-background="rgb(62	88	227	)" data-background-transition="zoom">
+                        <h1>CSS Pros & Cons</h1>
+                        <h2> Voordelen?</h2>
+                        <ul >
+                            <li >Makkelijk te implementeren</li>
+                            <li >Simpele Syntax</li>
+                            <li >Zowel Transitions als animaties</li>
+                            <li >Gunstig voor Memory en CPU</li>
+
+                        </ul>
+				</section>
+				<section data-auto-animate data-transition="slide" data-background="rgb(62	88	227	)" data-background-transition="zoom">
+                        <h1>CSS Pros & Cons</h1>
+                        <h2>Nadelen?</h2>
+                        <ul >
+                            <li >Time-based</li>
+                            <li >Geen support voor Dynamische content</li>
+                            <li >Animaties kunnen niet gecombineerd worden</li>
+                            <li >Je kunt alleen elementen animeren die geen ‘re-paint’ van de DOM opleveren</li>
+                        </ul>
+                </section>
+                <!-- JavaScript pros & cons -->
+				<section data-auto-animate data-transition="slide" data-background="#e09824" data-background-transition="zoom">
+                    <h1>JS Pros & Cons</h1>
+
+            </section>
+            <section data-auto-animate data-transition="slide" data-background="#e09824" data-background-transition="zoom">
+                <h1>JS Pros & Cons</h1>
+                    <h2> Voordelen?</h2>
+                    <ul >
+                        <li>Dynamisch inzetbaar (input, state change, etc)</li>
+                        <li>Complexe aniaties mogelijk</li>
+                        <li>Animaties kunnen gestopt en gecombineerd worden</li>
+                        <li>Meer mogelijkheden dan via CSS</li>
+
+                    </ul>
+            </section>
+            <section data-auto-animate data-transition="slide" data-background="#e09824" data-background-transition="zoom">
+                <h1>JS Pros & Cons</h1>
+                    <h2> Nadelen?</h2>
+                    <ul >
+                        <li >Veel code nodig voor simpele animaties </li>
+                        <li >Animaties gaan over de main thread</li>
+                    </ul>
+            </section>
+
+                <section data-auto-animate>
+                    <h1>animation 101; wat kun je animeren 🤔?</h1>
+                <ul class="fragment realy-small">
+                    <li><small>all</small></li>
+                    <li><small>backdrop-filter</small></li>
+                    <li><small>background</small></li>
+                    <li><small>background-color</small></li>
+                    <li><small>background-position</small></li>
+                    <li><small>background-size</small></li>
+                    <li><small>block-size</small></li>
+                    <li><small>border</small></li>
+                    <li><small>border-block-end</small></li>
+                    <li><small>border-block-end-color</small></li>
+                    <li><small>border-block-end-width</small></li>
+                    <li><small>border-block-start</small></li>
+                    <li><small>border-block-start-color</small></li>
+                    <li><small>border-block-start-width</small></li>
+                    <li><small>border-bottom</small></li>
+                    <li><small>border-bottom-color</small></li>
+                    <li><small>border-bottom-left-radius</small></li>
+                    <li><small>border-bottom-right-radius</small></li>
+                    <li><small>border-bottom-width</small></li>
+                    <li><small>border-color</small></li>
+                    <li><small>border-end-end-radius</small></li>
+                    <li><small>border-end-start-radius</small></li>
+                    <li><small>border-image-outset</small></li>
+                    <li><small>border-image-slice</small></li>
+                    <li><small>border-image-width</small></li>
+                    <li><small>border-inline-end</small></li>
+                    <li><small>border-inline-end-color</small></li>
+                    <li><small>border-inline-end-width</small></li>
+                    <li><small>border-inline-start</small></li>
+                    <li><small>border-inline-start-color</small></li>
+                    <li><small>border-inline-start-width</small></li>
+                    <li><small>border-left</small></li>
+                    <li><small>border-left-color</small></li>
+                    <li><small>border-left-width</small></li>
+                    <li><small>border-radius</small></li>
+                    <li><small>border-right</small></li>
+                    <li><small>border-right-color</small></li>
+                    <li><small>border-right-width</small></li>
+                    <li><small>border-start-end-radius</small></li>
+                    <li><small>border-start-start-radius</small></li>
+                    <li><small>border-top</small></li>
+                    <li><small>border-top-color</small></li>
+                    <li><small>border-top-left-radius</small></li>
+                    <li><small>border-top-right-radius</small></li>
+                    <li><small>border-top-width</small></li>
+                    <li><small>border-width</small></li>
+                    <li><small>bottom</small></li>
+                    <li><small>box-shadow</small></li>
+                    <li><small>clip</small></li>
+                    <li><small>clip-path</small></li>
+                    <li><small>color</small></li>
+                    <li><small>column-count</small></li>
+                    <li><small>column-gap</small></li>
+                    <li><small>column-rule</small></li>
+                    <li><small>column-rule-color</small></li>
+                    <li><small>column-rule-width</small></li>
+                    <li><small>column-width</small></li>
+                    <li><small>columns</small></li>
+                    <li><small>filter</small></li>
+                    <li><small>flex</small></li>
+                    <li><small>flex-basis</small></li>
+                    <li><small>flex-grow</small></li>
+                    <li><small>flex-shrink</small></li>
+                    <li><small>font</small></li>
+                    <li><small>font-size</small></li>
+                    <li><small>font-size-adjust</small></li>
+                    <li><small>font-stretch</small></li>
+                    <li><small>font-variation-settings</small></li>
+                    <li><small>font-weight</small></li>
+                    <li><small>gap</small></li>
+                    <li><small>grid-column-gap</small></li>
+                    <li><small>grid-gap</small></li>
+                    <li><small>grid-row-gap</small></li>
+                    <li><small>grid-template-columns</small></li>
+                    <li><small>grid-template-rows</small></li>
+                    <li><small>height</small></li>
+                    <li><small>inline-size</small></li>
+                    <li><small>inset</small></li>
+                    <li><small>inset-block</small></li>
+                    <li><small>inset-block-end</small></li>
+                    <li><small>inset-block-start</small></li>
+                    <li><small>inset-inline</small></li>
+                    <li><small>inset-inline-end</small></li>
+                    <li><small>inset-inline-start</small></li>
+                    <li><small>left</small></li>
+                    <li><small>letter-spacing</small></li>
+                    <li><small>line-clamp</small></li>
+                    <li><small>line-height</small></li>
+                    <li><small>margin</small></li>
+                    <li><small>margin-block-end</small></li>
+                    <li><small>margin-block-start</small></li>
+                    <li><small>margin-bottom</small></li>
+                    <li><small>margin-inline-end</small></li>
+                    <li><small>margin-inline-start</small></li>
+                    <li><small>margin-left</small></li>
+                    <li><small>margin-right</small></li>
+                    <li><small>margin-top</small></li>
+                    <li><small>mask</small></li>
+                    <li><small>mask-border</small></li>
+                    <li><small>mask-position</small></li>
+                    <li><small>mask-size</small></li>
+                    <li><small>max-block-size</small></li>
+                    <li><small>max-height</small></li>
+                    <li><small>max-inline-size</small></li>
+                    <li><small>max-lines</small></li>
+                    <li><small>max-width</small></li>
+                    <li><small>min-block-size</small></li>
+                    <li><small>min-height</small></li>
+                    <li><small>min-inline-size</small></li>
+                    <li><small>min-width</small></li>
+                    <li><small>object-position</small></li>
+                    <li><small>offset</small></li>
+                    <li><small>offset-anchor</small></li>
+                    <li><small>offset-distance</small></li>
+                    <li><small>offset-path</small></li>
+                    <li><small>offset-position</small></li>
+                    <li><small>offset-rotate</small></li>
+                    <li><small>opacity</small></li>
+                    <li><small>order</small></li>
+                    <li><small>outline</small></li>
+                    <li><small>outline-color</small></li>
+                    <li><small>outline-offset</small></li>
+                    <li><small>outline-width</small></li>
+                    <li><small>padding</small></li>
+                    <li><small>padding-block-end</small></li>
+                    <li><small>padding-block-start</small></li>
+                    <li><small>padding-bottom</small></li>
+                    <li><small>padding-inline-end</small></li>
+                    <li><small>padding-inline-start</small></li>
+                    <li><small>padding-left</small></li>
+                    <li><small>padding-right</small></li>
+                    <li><small>padding-top</small></li>
+                    <li><small>perspective</small></li>
+                    <li><small>perspective-origin</small></li>
+                    <li><small>right</small></li>
+                    <li><small>rotate</small></li>
+                    <li><small>row-gap</small></li>
+                    <li><small>scale</small></li>
+                    <li><small>scroll-margin</small></li>
+                    <li><small>scroll-margin-block</small></li>
+                    <li><small>scroll-margin-block-end</small></li>
+                    <li><small>scroll-margin-block-start</small></li>
+                    <li><small>scroll-margin-bottom</small></li>
+                    <li><small>scroll-margin-inline</small></li>
+                    <li><small>scroll-margin-inline-end</small></li>
+                    <li><small>scroll-margin-inline-start</small></li>
+                    <li><small>scroll-margin-left</small></li>
+                    <li><small>scroll-margin-right</small></li>
+                    <li><small>scroll-margin-top</small></li>
+                    <li><small>scroll-padding</small></li>
+                    <li><small>scroll-padding-block</small></li>
+                    <li><small>scroll-padding-block-end</small></li>
+                    <li><small>scroll-padding-block-start</small></li>
+                    <li><small>scroll-padding-bottom</small></li>
+                    <li><small>scroll-padding-inline</small></li>
+                    <li><small>scroll-padding-inline-end</small></li>
+                    <li><small>scroll-padding-inline-start</small></li>
+                    <li><small>scroll-padding-left</small></li>
+                    <li><small>scroll-padding-right</small></li>
+                    <li><small>scroll-padding-top</small></li>
+                    <li><small>scroll-snap-coordinate</small></li>
+                    <li><small>scroll-snap-destination</small></li>
+                    <li><small>scrollbar-color</small></li>
+                    <li><small>shape-image-threshold</small></li>
+                    <li><small>shape-margin</small></li>
+                    <li><small>shape-outside</small></li>
+                    <li><small>tab-size</small></li>
+                    <li><small>text-decoration</small></li>
+                    <li><small>text-decoration-color</small></li>
+                    <li><small>text-decoration-thickness</small></li>
+                    <li><small>text-emphasis</small></li>
+                    <li><small>text-emphasis-color</small></li>
+                    <li><small>text-indent</small></li>
+                    <li><small>text-shadow</small></li>
+                    <li><small>text-underline-offset</small></li>
+                    <li><small>top</small></li>
+                    <li><small>transform</small></li>
+                    <li><small>transform-origin</small></li>
+                    <li><small>translate</small></li>
+                    <li><small>vertical-align</small></li>
+                    <li><small>visibility</small></li>
+                    <li><small>width</small></li>
+                    <li><small>word-spacing</small></li>
+                    <li><small>z-index</small></li>
+                    <li><small>zoom</small></li>
+                </ul>
+                </section>
+                <section data-auto-animate>
+                    <h1>animation 101; wat kun je animeren 🤔?</h1>
+                <ul class="realy-small">
+                    <li><small>all</small></li>
+                    <li><small>backdrop-filter</small></li>
+                    <li><small>background</small></li>
+                    <li><small>background-color</small></li>
+                    <li><small>background-position</small></li>
+                    <li><small>background-size</small></li>
+                    <li><small>border</small></li>
+                    <li><small>box-shadow</small></li>
+                    <li><small>clip</small></li>
+                    <li><small>clip-path</small></li>
+                    <li><small>color</small></li>
+                    <li><small>column-count</small></li>
+                    <li><small>column-gap</small></li>
+                    <li><small>column-rule</small></li>
+                    <li><small>column-rule-color</small></li>
+                    <li><small>column-rule-width</small></li>
+                    <li><small>column-width</small></li>
+                    <li><small>columns</small></li>
+                    <li><small>filter</small></li>
+                    <li><small>flex</small></li>
+                    <li><small>flex-basis</small></li>
+                    <li><small>flex-grow</small></li>
+                    <li><small>flex-shrink</small></li>
+                    <li><small>font-size</small></li>
+                    <li><small>font-size-adjust</small></li>
+                    <li><small>font-stretch</small></li>
+                    <li><small>font-weight</small></li>
+                    <li><small>gap</small></li>
+                    <li><small>grid-column-gap</small></li>
+                    <li><small>grid-gap</small></li>
+                    <li><small>grid-row-gap</small></li>
+                    <li><small>grid-template-columns</small></li>
+                    <li><small>grid-template-rows</small></li>
+                    <li><small>letter-spacing</small></li>
+                    <li><small>line-clamp</small></li>
+                    <li><small>line-height</small></li>
+                    <li><small>margin</small></li>
+                    <li><small>opacity</small></li>
+                    <li><small>order</small></li>
+                    <li><small>outline</small></li>
+                    <li><small>padding</small></li>
+                    <li><small>perspective</small></li>
+                    <li><small>perspective-origin</small></li>
+                    <li><small>rotate</small></li>
+                    <li><small>row-gap</small></li>
+                    <li><small>scale</small></li>
+                    <li><small>text-indent</small></li>
+                    <li><small>text-shadow</small></li>
+                    <li><small>transform</small></li>
+                    <li><small>translate</small></li>
+
+                </ul>
+                </section>
+				<section data-markdown>Slide 5</section>
+				<section data-markdown>Slide 6</section>
+				<section data-markdown>Slide 7</section>
+				<section data-markdown>Slide 8</section>
+				<section data-markdown>Slide 9</section>
+				<section data-markdown>Slide 10</section>
+				<section data-markdown>Slide 11</section>
 			</div>
 		</div>
 
