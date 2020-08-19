@@ -64,7 +64,7 @@
 
 .reveal ::-moz-selection {
 	color: #fff;
-	background: #a23;
+	background: rgb(229, 132, 6);
 	text-shadow: none;
 }
 
@@ -381,4 +381,19 @@ ul.realy-small{
     column-gap: 20px;
     width: 100%;
     list-style: none;
+}
+
+.links{
+    text-align: left;
+    column-count: 2;
+    column-gap: 20px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.45);
+
+}
+.links:last-child{
+    border-bottom: none;
+}
+
+.links strong{
+    display: block;
 }
