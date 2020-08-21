@@ -89,7 +89,7 @@
                     <ul >
                         <li>Dynamisch inzetbaar (input, state change, etc)</li>
                         <li>Complexe aniaties mogelijk</li>
-                        <li>Animaties kunnen gestopt en gecombineerd worden</li>
+                        <li>Animaties kunnen gecombineerd worden</li>
                         <li>Meer mogelijkheden dan via CSS</li>
 
                     </ul>
@@ -135,6 +135,50 @@
                     Animation example 2 - JS | simple transition </a> by Johan Bijlsma (<a href="https://codepen.io/johanbijlsma">@johanbijlsma</a>)
                     on <a href="https://codepen.io">CodePen</a>.</span>
                   </p>
+                </section>
+            <section data-auto-animate data-background="rgb(62	88	227	)" data-background-transition="zoom">
+                <h1>Syntax - CSS </h1>
+               <p>de Syntax is vrij simpel:
+               </p>
+               <h4>transition</h4>
+               <p><pre><code>/* property name | duration | timing function | delay */
+transition: margin-right 4s ease-in-out 1s;</code></pre></p>
+                </section>
+            <section data-auto-animate data-background="rgb(62	88	227	)" data-background-transition="zoom">
+                <h1>Syntax - CSS </h1>
+               <p>Maar je kunt ook verschillende properties stylen:
+               </p>
+               <h4>transition</h4>
+               <p><pre><code>/* property name | duration | timing function | delay */
+transition: margin-right 4s ease-in-out 1s,
+background-color 2s linear 50ms;</code></pre></p>
+                <p>Hiermee kun je met 1 CSS declaration meerdere transitions mee geven.</p>
+                <p>Daarnaast bestaan ook de attributes <code>all</code> en <code>none</code>.</p>
+                </section>
+            <section data-auto-animate data-background="rgb(62	88	227	)" data-background-transition="zoom">
+                <h1>Syntax - Animation </h1>
+               <p>de animation syntax is iets complexer:
+               </p>
+               <h4>Animation</h4>
+               <p><pre><code>/* @keyframes duration | timing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+animation: 3s ease-in 1s 2 reverse both paused slidein;</code></pre></p>
+                <p>Bovenstaande code wordt toegegevoegd aan het element dat je wil animeren.  Maar eerst moet de animatie nog worden gedefinieerd</p>
+
+                </section>
+            <section data-auto-animate data-background="rgb(62	88	227	)" data-background-transition="zoom">
+                <h1>Syntax - CSS </h1>
+               <p>Een @keyframes animatie</p>
+               <h4>Animation</h4>
+               <p><pre><code>@keyframes bgFade {
+    0% {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        background-color:  rgba(197, 29, 29, 0.45);
+    }
+}</code></pre></p>Een <code>@keyframes</code> animatie moet een minimaal een naam hebben. Percentages zijn niet verplicht (<code>from</code> en <code>to</code> zijn ook toegestaan).
+                <p></p>
                 </section>
 
 <!-- CSS - welke eigenschappen kun je animeren -->
@@ -393,6 +437,22 @@
                     <li>scale</li>
                 </ul>
                 </section>
+                <section data-auto-animate data-transition="slide" data-background="#509c16" data-background-transition="zoom">
+                    <h1>Greensock</h1>
+                <p>Greensock is een JavaScript Animation Framework</p>
+                <img src="https://friendly-northcutt-f51086.netlify.app/logo-man.svg" alt="Greensock logo">
+                </section>
+                <section data-auto-animate data-transition="slide" data-background="#509c16" data-background-transition="zoom">
+                    <h1>Greensock</h1>
+                <p>Greensock biedt een hoop extra mogelijkheden.</p>
+                <ul>
+                    <li><code>gsap.to</code></li>
+                    <li><code>gsap.from</code></li>
+                    <li><code>gsap.timelime</code></li>
+
+                </ul>
+
+                </section>
 				<!-- <section data-markdown>Slide 5</section>
 				<section data-markdown>Slide 6</section>
 				<section data-markdown>Slide 7</section>
@@ -403,7 +463,7 @@
                 <div class="links"><strong>Resources</strong>
                 <ul>
                     <li><a href="#">Deze presentatie</a> </li>
-                    <li><a href="https://codepen.io/collection/DyRZzv">Mijn Codepen collection met de CSS en JS animation voorbeelden</a> </li>
+                    <li><a href="https://codepen.io/collection/DyRZzv">Codepen collection met de CSS en JS animation voorbeelden</a> </li>
                 </ul>
             </div>
             <div class="links">
