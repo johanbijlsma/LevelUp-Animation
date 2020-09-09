@@ -564,3 +564,98 @@ ul.realy-small {
 #simpleDemo4 .show-code-container label {
 	display: inline-block;
 }
+
+.svelte-suo60u {
+	box-sizing: border-box;
+	font-family: 'Jost', Verdana, sans-serif;
+}
+@font-face {
+	font-family: Jost;
+	src: url('/Jost-VariableFont_ital,wght.ttf');
+}
+.demo__container.svelte-7jnu0g.svelte-7jnu0g {
+	margin: 10px auto;
+	width: 80%;
+	border: dashed 2px rgba(0, 0, 30, 0.3);
+	padding: 20px;
+	background-color: #33333375;
+	border-radius: 30px;
+	position: relative;
+}
+.demo__title.svelte-7jnu0g.svelte-7jnu0g {
+	color: #8ac640;
+	margin: 0 0 6px;
+}
+.weather-selector-container.svelte-7jnu0g.svelte-7jnu0g {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	background-color: #8ac640;
+}
+.weather-option.svelte-7jnu0g.svelte-7jnu0g {
+	padding: 0px 20px;
+	overflow: hidden;
+}
+.weather-option.svelte-7jnu0g label.svelte-7jnu0g {
+	height: 100%;
+	padding: 20px 5px;
+	border: 1px dashed transparent;
+}
+.weather-option.svelte-7jnu0g label.svelte-7jnu0g:hover,
+.weather-option.svelte-7jnu0g label.svelte-7jnu0g:focus {
+	cursor: pointer;
+	border: 1px dashed tomato;
+}
+input[type='radio'].svelte-7jnu0g.svelte-7jnu0g {
+	position: absolute;
+	appearance: none;
+	visibility: hidden;
+}
+input[type='radio']:checked + label.svelte-7jnu0g.svelte-7jnu0g {
+	color: tomato;
+	background: white;
+	height: 100%;
+	padding: 20px 5px;
+	font-weight: 700;
+}
+.card.svelte-7jnu0g.svelte-7jnu0g {
+	height: 300px;
+	width: 200px;
+	background: white;
+	margin: 30px auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6), 0px 0px 5px rgba(0, 0, 0, 0.6);
+	padding: 50px 0 0 0;
+	overflow: hidden;
+}
+.card__title.svelte-7jnu0g.svelte-7jnu0g {
+	text-align: center;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+	font-size: clamp(13px, 10vw, 30px);
+	text-transform: capitalize;
+}
+.card.svelte-7jnu0g svg.svelte-7jnu0g {
+	transform: scale(0);
+}
+.card.clear.svelte-7jnu0g.svelte-7jnu0g {
+	background-image: radial-gradient(whitesmoke, lightblue);
+}
+.card.sunny.svelte-7jnu0g.svelte-7jnu0g {
+	background-image: radial-gradient(whitesmoke, rgb(59, 104, 230));
+}
+.card.cloudy.svelte-7jnu0g.svelte-7jnu0g {
+	background-image: radial-gradient(whitesmoke, slategray);
+}
+.card.raining.svelte-7jnu0g.svelte-7jnu0g {
+	background-image: radial-gradient(whitesmoke, darkslategray);
+}
+.card.snowing.svelte-7jnu0g.svelte-7jnu0g {
+	background-image: radial-gradient(whitesmoke, rgb(109, 119, 148));
+}
+.card.stormy.svelte-7jnu0g.svelte-7jnu0g {
+	background-image: radial-gradient(slategray, darkslategray);
+}
+
+/*# sourceMappingURL=bundle.css.map */
